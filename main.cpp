@@ -15,7 +15,7 @@
 
 IDebugLog gLog;
 
-static PluginHandle                 g_pluginHandle = kPluginHandle_Invalid;
+static PluginHandle g_pluginHandle = kPluginHandle_Invalid;
 static OBSECommandTableInterface* g_cmdTable = NULL;
 
 typedef bool (*CommandExecute)(COMMAND_ARGS);
