@@ -63,7 +63,7 @@ static bool Hook_PayFine(COMMAND_ARGS)
 	PlayerCharacter* player = *g_thePlayer;
 
 	if (player && thisObj == player) {
-		_MESSAGE("PayFine on player: running paperwork without arming the jail teleport");
+		//_MESSAGE("PayFine on player: running function without the jail teleport");
 		CallPayFineWorker(player, 0);
 		*((UInt8*)player + kOffset_JailPending) = 0;
 		return true;
